@@ -42,8 +42,14 @@ found  - HUGGINGFACEHUB_API_TOKEN
 ERROR  - WEAVIATE_API_KEY
 ```
 
-If you know the services you want to use, you can obtain those API keys. If you are not sure, you can registere those keys later on.
+If you know the services you want to use, you can obtain those API keys. If you are not sure, you can register those keys later on.
 
-## OVerview of what you are going to do
+## Overview of what you are going to do
 ![Overview of the Application for the workshop](docs/solution-overview.drawio.png)
+
+## Working with LLMs
+
+### HuggingFace
+[Original documentation from Langchain](https://python.langchain.com/docs/integrations/providers/huggingface)
+
 
