@@ -1,0 +1,2 @@
+OPENAI_API_KEY=... # Your Open AI token here
+HUGGINGFACEHUB_API_TOKEN=... # Your Hugging Face token here
