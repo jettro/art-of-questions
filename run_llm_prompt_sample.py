@@ -3,11 +3,6 @@ from langchain import PromptTemplate, LLMChain
 from langchain.llms import HuggingFaceHub
 from langchain.llms import OpenAI
 
-# Configure the parameters, try different values and notice the impact
-TEMPERATURE = 0.1
-MAX_LENGTH = 100
-COUNTRY = "Belgium"
-
 
 def initialize_huggingface_llm(prompt: PromptTemplate, temperature: float, max_length: int) -> LLMChain:
     repo_id = "google/flan-t5-xxl"
