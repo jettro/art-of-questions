@@ -1,2 +1,4 @@
 OPENAI_API_KEY=... # Your Open AI token here
 HUGGINGFACEHUB_API_TOKEN=... # Your Hugging Face token here
+WEAVIATE_API_KEY=... # Your Weaviate API token here
+WEAVIATE_CLUSTER_URL=... # Your Weaviate Cluster url here
