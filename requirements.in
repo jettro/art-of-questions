@@ -1,0 +1,12 @@
+chromadb
+huggingface-hub
+langchain
+numpy
+openai
+pandas
+python-dotenv
+sentence-transformers
+streamlit
+tiktoken
+unstructured
+weaviate-client
