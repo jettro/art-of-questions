@@ -46,4 +46,3 @@ If you know the services you want to use, you can obtain those API keys. If you 
 ![Overview of the Application for the workshop](docs/solution-overview.drawio.png)
 
 Before the workshop we push 4 assignments. Each assignment contains a number of TODOs. Your task is to fix/implement the TODOs.
-
