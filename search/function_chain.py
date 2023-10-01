@@ -8,8 +8,21 @@ from search import search_faq, search_talks
 
 
 def init_fn_chain():
-    # TODO implement this function
-    return None
+    llm = ChatOpenAI(model="gpt-4", temperature=0, openai_api_key=os.getenv('OPEN_AI_API_KEY'))
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ("system", "You are a system to search for answers on a provided question."),
+            ("human", "Make calls to the relevant function to using the following input: {input}"),
+            ("human", "Tip: Make sure to answer in the correct format"),
+        ]
+    )
+
+    return create_openai_fn_chain(
+        functions=[search_faq, search_talks],
+        llm=llm,
+        prompt=prompt,
+        verbose=True
+    )
 
 
 def call_the_right_function(question: str):

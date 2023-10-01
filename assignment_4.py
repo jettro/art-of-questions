@@ -25,27 +25,27 @@ def init_page():
 
 
 def show_results(question: str = None):
-    answer_1 = search_faq(question=question)
-    answer_2 = search_talks(question=question)
-
-    st.write(search_input)
-    st.subheader("Answers from FAQ")
-    st.write(answer_1)
-    st.subheader("Answers from Talks")
-    st.write(answer_2)
+    # answer_1 = search_faq(question=question)
+    # answer_2 = search_talks(question=question)
+    #
+    # st.write(search_input)
+    # st.subheader("Answers from FAQ")
+    # st.write(answer_1)
+    # st.subheader("Answers from Talks")
+    # st.write(answer_2)
 
     # TODO: Comment the top of this function and remove the comment from the code below. Fix the error.
     # TODO: You can use this part of the docs
     # TODO https://python.langchain.com/docs/modules/chains/how_to/openai_functions
 
-    # answer = call_the_right_function(question=question)
-    # st.write(f"Called function: {answer['name']}")
-    # st.divider()
-    #
-    # if answer['name'] == 'search_talks':
-    #     show_search_talks(answer['response'])
-    # elif answer['name'] == 'search_faq':
-    #     show_search_faq(answer['response'])
+    answer = call_the_right_function(question=question)
+    st.write(f"Called function: {answer['name']}")
+    st.divider()
+
+    if answer['name'] == 'search_talks':
+        show_search_talks(answer['response'])
+    elif answer['name'] == 'search_faq':
+        show_search_faq(answer['response'])
 
 
 def show_search_talks(talks: list):
